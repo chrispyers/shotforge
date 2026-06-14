@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+input[type='range'] {
+  accent-color: #a78bfa;
+}
+
+/* Used by PageRenderer to allow variable-axis overrides */
+.gsf {
+  font-family: 'Google Sans Flex', 'Roboto Flex', 'Inter', sans-serif;
+}
+
+@layer components {
+  .input {
+    @apply w-full bg-neutral-900 rounded-lg px-2 py-1.5 text-sm border border-neutral-800 outline-none focus:border-violet-500 transition-colors;
+  }
+}
